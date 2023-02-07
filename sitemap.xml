@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://bheraldpk.github.io/hugo/</loc>
+    <loc>http://bheraldpk.github.io/hugo2/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>http://bheraldpk.github.io/hugo/categories/</loc>
+    <loc>http://bheraldpk.github.io/hugo2/categories/</loc>
   </url><url>
-    <loc>http://bheraldpk.github.io/hugo/docs/</loc>
+    <loc>http://bheraldpk.github.io/hugo2/docs/</loc>
   </url><url>
-    <loc>http://bheraldpk.github.io/hugo/docs/getting-started/</loc>
+    <loc>http://bheraldpk.github.io/hugo2/docs/getting-started/</loc>
   </url><url>
-    <loc>http://bheraldpk.github.io/hugo/tags/</loc>
+    <loc>http://bheraldpk.github.io/hugo2/tags/</loc>
   </url>
 </urlset>
