@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Configuration on My Doc Site</title>
+    <title>Configuration on Commure Docs</title>
     <link>https://bheraldpk.github.io/hugo2/docs/configuration/</link>
-    <description>Recent content in Configuration on My Doc Site</description>
+    <description>Recent content in Configuration on Commure Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://bheraldpk.github.io/hugo2/docs/configuration/index.xml" rel="self" type="application/rss+xml" />
     <item>

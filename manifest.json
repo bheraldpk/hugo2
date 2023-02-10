@@ -1,6 +1,6 @@
 {
-  "name": "My Doc Site",
-  "short_name": "My Doc Site",
+  "name": "Commure Docs",
+  "short_name": "Commure Docs",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
