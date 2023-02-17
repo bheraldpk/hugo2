@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Application Management Tool#Enabled by Commure OS
 Include App Builder and User Manager.
+This shows the application list in our new CommureOS platform The initial view shows a list of the applications that have been created on the Commure OS platform.
 ? https://commure.atlassian.net/browse/PRODUCT-109
 https://commure.atlassian.net/browse/PRODUCT-90
 Creating an App#https://commure.atlassian.net/browse/PRODUCT-94
-Login to the Application Management Tool. Click the Create button in the top-right corner of the screen. Complete the following details in the drawer that opens on the right side of the screen and then click Save. Name Display Name Path Defining App Aata Schema,#https://commure.atlassian.net/browse/PRODUCT-95">
+Login to the Application Management Tool. Click the &#43; CREATE button in the top-right corner of the screen. Complete the following details in the drawer that opens on the right side of the screen and then click Save.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="App Builder Tool" />
 <meta property="og:description" content="" />
@@ -18,9 +19,9 @@ Login to the Application Management Tool. Click the Create button in the top-rig
 <title>App Builder Tool | Commure Docs</title>
 <link rel="manifest" href="/hugo2/manifest.json">
 <link rel="icon" href="/hugo2/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/hugo2/book.min.b6e03e741645545160d77928f3149389b3e2eaec733d2b19539941dfea3fc1c6.css" integrity="sha256-tuA&#43;dBZFVFFg13ko8xSTibPi6uxzPSsZU5lB3&#43;o/wcY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/hugo2/book.min.01cc1cbc5ef0ae2c73e41c37375b4e0dea0ec13e7d1e93410a13fba28b04905e.css" integrity="sha256-AcwcvF7wrixz5Bw3N1tODeoOwT59HpNBChP7oosEkF4=" crossorigin="anonymous">
   <script defer src="/hugo2/flexsearch.min.js"></script>
-  <script defer src="/hugo2/en.search.min.81bc6336a26e032646cf5c1bd2de9d7def50e379a327146494e766bd9bc8d286.js" integrity="sha256-gbxjNqJuAyZGz1wb0t6dfe9Q43mjJxRklOdmvZvI0oY=" crossorigin="anonymous"></script>
+  <script defer src="/hugo2/en.search.min.9ac88dd2e3c8323c1b946ec9465cbc37005db2d6e9a140ed7ed9022c21fababe.js" integrity="sha256-msiN0uPIMjwblG7JRly8NwBdstbpoUDtftkCLCH6ur4=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://bheraldpk.github.io/hugo2/docs/app-builder/index.xml" title="Commure Docs" />
 <!--
 Made with Book Theme
@@ -313,10 +314,17 @@ https://github.com/alex-shpak/hugo-book
 <nav id="TableOfContents">
   <ul>
     <li><a href="#creating-an-app">Creating an App</a></li>
-    <li><a href="#defining-app-aata-schema">Defining App Aata Schema,</a></li>
-    <li><a href="#define-table-level-rules">Define table level rules,</a></li>
-    <li><a href="#explore-graphql-auto-generated-apis-and">explore GraphQL auto-generated APIs and</a></li>
-    <li><a href="#configure-ui-components">configure UI components</a></li>
+    <li><a href="#managing-app-metadata-schema">Managing App Metadata Schema</a>
+      <ul>
+        <li><a href="#view-app-database-schema">View app database schema</a></li>
+        <li><a href="#create-a-new-table">Create a new table</a></li>
+        <li><a href="#create-new-table-fields">Create new table fields</a></li>
+        <li><a href="#edit-existing-fields">Edit existing fields</a></li>
+      </ul>
+    </li>
+    <li><a href="#defining-table-level-rules">Defining Table-Level Rules</a></li>
+    <li><a href="#exploring-graphql-auto-generated-apis">Exploring GraphQL auto-generated APIs</a></li>
+    <li><a href="#configuring-ui-components">Configuring UI Components</a></li>
   </ul>
 </nav>
 
@@ -335,6 +343,8 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <p>Enabled by Commure OS</p>
 <p>Include App Builder and User Manager.</p>
+<p>This shows the application list in our new CommureOS platform
+The initial view shows a list of the applications that have been created on the Commure OS platform.</p>
 <p>? <a href="https://commure.atlassian.net/browse/PRODUCT-109">https://commure.atlassian.net/browse/PRODUCT-109</a></p>
 <p><a href="https://commure.atlassian.net/browse/PRODUCT-90">https://commure.atlassian.net/browse/PRODUCT-90</a></p>
 <h2 id="creating-an-app">
@@ -344,30 +354,89 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="https://commure.atlassian.net/browse/PRODUCT-94">https://commure.atlassian.net/browse/PRODUCT-94</a></p>
 <ol>
 <li>Login to the Application Management Tool.</li>
-<li>Click the <em>Create</em> button in the top-right corner of the screen.</li>
-<li>Complete the following details in the drawer that opens on the right side of the screen and then click <em>Save</em>.</li>
-</ol>
+<li>Click the <strong>+ CREATE</strong> button in the top-right corner of the screen.</li>
+<li>Complete the following details in the drawer that opens on the right side of the screen and then click <strong>Save</strong>.
 <ul>
 <li>Name</li>
 <li>Display Name</li>
+<li>Type</li>
 <li>Path</li>
 </ul>
-<h2 id="defining-app-aata-schema">
-  Defining App Aata Schema,
-  <a class="anchor" href="#defining-app-aata-schema">#</a>
+</li>
+</ol>
+<p>Now you have a the shell of your application with a default set of database tables.
+You can make a number of updates to an app after it has been created, such as defining its database schema, setting business rules, editing  basic info, and adding and removing dependancies.</p>
+<h2 id="managing-app-metadata-schema">
+  Managing App Metadata Schema
+  <a class="anchor" href="#managing-app-metadata-schema">#</a>
 </h2>
 <p><a href="https://commure.atlassian.net/browse/PRODUCT-95">https://commure.atlassian.net/browse/PRODUCT-95</a></p>
-<h2 id="define-table-level-rules">
-  Define table level rules,
-  <a class="anchor" href="#define-table-level-rules">#</a>
+<p>What is the purpose of the metadata schema?
+What comes out of the box?
+What else can you do?</p>
+<p>Each application is created with a default set of database tables, including Patient, Table2,
+created with a Patient table with some default nondescript tables</p>
+<h3 id="view-app-database-schema">
+  View app database schema
+  <a class="anchor" href="#view-app-database-schema">#</a>
+</h3>
+<ol>
+<li>Select the app you want to edit in the application list.</li>
+<li>Click the <strong>Data Schema</strong> button. From here you can:
+<ul>
+<li><a href="#create-a-new-table">Create a new table</a></li>
+<li><a href="#create-new-table-fields">Create new table fields</a></li>
+<li><a href="#edit-existing-fields">Edit existing fields</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="create-a-new-table">
+  Create a new table
+  <a class="anchor" href="#create-a-new-table">#</a>
+</h3>
+<ol>
+<li>Open the database schema for the app (see <a href="#view-app-database-schema">View an app&rsquo;s database schema</a>).</li>
+<li>Click the <strong>Create</strong> button in the top-right corner of the screen.</li>
+<li>Complete the following details in the drawer that opens on the right side of the screen and then click <strong>Save</strong>.
+<ul>
+<li>Select Table or Canonical</li>
+<li>Enter a Name for this table</li>
+<li>Enter a Description for this table</li>
+</ul>
+</li>
+</ol>
+<h3 id="create-new-table-fields">
+  Create new table fields
+  <a class="anchor" href="#create-new-table-fields">#</a>
+</h3>
+<p>For exitsing tables in your app&rsquo;s database schema, you can add and edit fields.</p>
+<ol>
+<li>Open the database schema for the app (see <a href="#view-app-database-schema">View an app&rsquo;s database schema</a>).</li>
+<li>Select the table in the list that you want to edit.</li>
+<li>In the bottom-half of the screen, select the <strong>Fields</strong> tab and then click the <strong>+ CREATE</strong> button.</li>
+<li>Complete the following details and then click the <strong>Save</strong> button.
+<ul>
+<li>Select the field Type</li>
+<li>Enter the field Name</li>
+<li>Select the Field Type</li>
+</ul>
+</li>
+</ol>
+<h3 id="edit-existing-fields">
+  Edit existing fields
+  <a class="anchor" href="#edit-existing-fields">#</a>
+</h3>
+<h2 id="defining-table-level-rules">
+  Defining Table-Level Rules
+  <a class="anchor" href="#defining-table-level-rules">#</a>
 </h2>
-<h2 id="explore-graphql-auto-generated-apis-and">
-  explore GraphQL auto-generated APIs and
-  <a class="anchor" href="#explore-graphql-auto-generated-apis-and">#</a>
+<h2 id="exploring-graphql-auto-generated-apis">
+  Exploring GraphQL auto-generated APIs
+  <a class="anchor" href="#exploring-graphql-auto-generated-apis">#</a>
 </h2>
-<h2 id="configure-ui-components">
-  configure UI components
-  <a class="anchor" href="#configure-ui-components">#</a>
+<h2 id="configuring-ui-components">
+  Configuring UI Components
+  <a class="anchor" href="#configuring-ui-components">#</a>
 </h2>
 <p>Return <a href="/hugo2/">Home</a></p>
 </article>
@@ -412,10 +481,17 @@ https://github.com/alex-shpak/hugo-book
 <nav id="TableOfContents">
   <ul>
     <li><a href="#creating-an-app">Creating an App</a></li>
-    <li><a href="#defining-app-aata-schema">Defining App Aata Schema,</a></li>
-    <li><a href="#define-table-level-rules">Define table level rules,</a></li>
-    <li><a href="#explore-graphql-auto-generated-apis-and">explore GraphQL auto-generated APIs and</a></li>
-    <li><a href="#configure-ui-components">configure UI components</a></li>
+    <li><a href="#managing-app-metadata-schema">Managing App Metadata Schema</a>
+      <ul>
+        <li><a href="#view-app-database-schema">View app database schema</a></li>
+        <li><a href="#create-a-new-table">Create a new table</a></li>
+        <li><a href="#create-new-table-fields">Create new table fields</a></li>
+        <li><a href="#edit-existing-fields">Edit existing fields</a></li>
+      </ul>
+    </li>
+    <li><a href="#defining-table-level-rules">Defining Table-Level Rules</a></li>
+    <li><a href="#exploring-graphql-auto-generated-apis">Exploring GraphQL auto-generated APIs</a></li>
+    <li><a href="#configuring-ui-components">Configuring UI Components</a></li>
   </ul>
 </nav>
 
