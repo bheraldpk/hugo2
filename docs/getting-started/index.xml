@@ -1,44 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Getting Started on Commure Docs</title>
-    <link>https://bheraldpk.github.io/hugo2/docs/getting-started/</link>
-    <description>Recent content in Getting Started on Commure Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://bheraldpk.github.io/hugo2/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Introduction</title>
-      <link>https://bheraldpk.github.io/hugo2/docs/getting-started/introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bheraldpk.github.io/hugo2/docs/getting-started/introduction/</guid>
-      <description>Introduction#hi
-What is this?#Describe what this is.
-What can it be used for?#Describe what it can be used for.
-What does it mean/ow does it help you?#How does it work in a nutshell?#Main Concepts and Terminology#</description>
-    </item>
-    
-    <item>
-      <title>Use Cases</title>
-      <link>https://bheraldpk.github.io/hugo2/docs/getting-started/use-cases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bheraldpk.github.io/hugo2/docs/getting-started/use-cases/</guid>
-      <description>Use Cases#Here are a few of the most common use cases for Commure OS/Admin Tool/etc.
-Use Case 1#Use Case 2#Use Case 3#Use Case 4#</description>
-    </item>
-    
-    <item>
-      <title>Quick Start</title>
-      <link>https://bheraldpk.github.io/hugo2/docs/getting-started/quick-start/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bheraldpk.github.io/hugo2/docs/getting-started/quick-start/</guid>
-      <description>Quick Start#This is a Quick Start to get you going.
-Step 1#Log in first.
-Step 2#Auth-Z
-Step 3#Auth-N</description>
-    </item>
-    
-  </channel>
-</rss>

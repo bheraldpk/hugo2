@@ -6,5 +6,36 @@
     <description>Recent content in Docs on Commure Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://bheraldpk.github.io/hugo2/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview of App UI Screen</title>
+      <link>https://bheraldpk.github.io/hugo2/docs/app-ui-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheraldpk.github.io/hugo2/docs/app-ui-view/</guid>
+      <description>Overview of App UI Screen#The App UI screen is where you can create, edit, and delete UI pages.
+Viewing the Page List for an App#Select Applications from the sidebar. Select the app you want to edit. Click the APP UI button near the top of the screen. This opens the Page List showing each Page Name, Path, and Page icon for each page that has been created for the app.</description>
+    </item>
+    
+    <item>
+      <title>Starting a New App</title>
+      <link>https://bheraldpk.github.io/hugo2/docs/create-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheraldpk.github.io/hugo2/docs/create-app/</guid>
+      <description>Starting an App#Login to the Application Management Tool. Click the + CREATE button in the top-right corner of the screen. Complete the following details in the drawer that opens on the right side of the screen and then click Save. Name Display Name Type Path Now you have a the shell of your application with a default set of database tables. You can make a number of updates to an app after it has been created, such as defining its database schema, setting business rules, editing basic info, and adding and removing dependancies.</description>
+    </item>
+    
+    <item>
+      <title>Database Schema</title>
+      <link>https://bheraldpk.github.io/hugo2/docs/schema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheraldpk.github.io/hugo2/docs/schema/</guid>
+      <description>App Data Schema#Enabled by Commure OS
+Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
+Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
+View app database schema#Select the app you want to edit in the application list.</description>
+    </item>
+    
   </channel>
 </rss>
