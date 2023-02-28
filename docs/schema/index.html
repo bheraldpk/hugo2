@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="App Data Schema#Enabled by Commure OS
+<meta name="description" content="App Data Schema#These are the database tables or entities of this application.
 Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
 Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
 View app database schema#Select the app you want to edit in the application list.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Database Schema" />
-<meta property="og:description" content="App Data Schema#Enabled by Commure OS
+<meta property="og:description" content="App Data Schema#These are the database tables or entities of this application.
 Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
 Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
 View app database schema#Select the app you want to edit in the application list." />
@@ -23,7 +23,7 @@ View app database schema#Select the app you want to edit in the application li
 <link rel="icon" href="/hugo2/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/hugo2/book.min.eed8b6b088a9c7fb97e52d6a6d3d763d5a139e94ea7c7e07b6b3325740e2b802.css" integrity="sha256-7ti2sIipx/uX5S1qbT12PVoTnpTqfH4HtrMyV0DiuAI=" crossorigin="anonymous">
   <script defer src="/hugo2/flexsearch.min.js"></script>
-  <script defer src="/hugo2/en.search.min.459d79d1b7c9b13b083f0da00f187a1ea2c05a10efa9425d7acd5d6e84b8a4ab.js" integrity="sha256-RZ150bfJsTsIPw2gDxh6HqLAWhDvqUJdes1dboS4pKs=" crossorigin="anonymous"></script>
+  <script defer src="/hugo2/en.search.min.ba5086339cf4b859b5eddbe5aad37cf6d227c34f2cf2ef9623f426a46368f553.js" integrity="sha256-ulCGM5z0uFm17dvlqtN89tInw08s8u&#43;WI/QmpGNo9VM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -75,6 +75,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/hugo2/docs/app-list/" class="">Applications List Screen</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/hugo2/docs/app-ui-view/" class="">Overview of App UI Screen</a>
   
 
@@ -89,6 +102,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/hugo2/docs/create-app/" class="">Starting a New App</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/hugo2/docs/business-logic/" class="">Creating Rules and Logic</a>
   
 
         </li>
@@ -187,7 +213,7 @@ https://github.com/alex-shpak/hugo-book
   App Data Schema
   <a class="anchor" href="#app-data-schema">#</a>
 </h1>
-<p>Enabled by Commure OS</p>
+<p>These are the database tables or entities of this application.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h2 id="managing-app-metadata-schema">
@@ -232,9 +258,15 @@ created with a Patient table with some default nondescript tables</p>
 <li>Click the <strong>Create</strong> button in the top-right corner of the screen.</li>
 <li>Complete the following details in the drawer that opens on the right side of the screen and then click <strong>Save</strong>.
 <ul>
-<li>Select Table or Canonical</li>
-<li>Enter a Name for this table. For canonical tables, this will be a drop-down with the list of canonical tables available. For non-canonical tables, this will be a text input.</li>
-<li>Enter a Description for this table</li>
+<li>
+<p>Select Table or Canonical - Canonical tables allows leveraging supported FHIR resources.</p>
+</li>
+<li>
+<p>Enter a Name for this table. For canonical tables, this will be a drop-down with the list of canonical tables available. For non-canonical tables, this will be a text input.</p>
+</li>
+<li>
+<p>Enter a Description for this table</p>
+</li>
 </ul>
 </li>
 </ol>

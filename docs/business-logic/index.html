@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.107.0">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Application Management Tool#The initial view shows a list of the applications that have been created on the Commure OS platform.
-Here you&rsquo;ll find the following topics:
-Applications List Overview of App UI Screen Starting a New App App Rules and Logic App Data Schema ">
+<meta name="description" content="Creating Rules and Business Logic#From within an app detail screen, you can add rules and business logic. This is added via javascript.
+View App Business Logic#Select the app you want to edit in the application list. Click the Business Logic button. From here you can: Create new rules Edit existing rules Creating New Business Logic Rules#Open the business logic for an app (See View App Business Logic) and click the Business Logic button.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://bheraldpk.github.io/hugo2/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Creating Rules and Logic" />
+<meta property="og:description" content="Creating Rules and Business Logic#From within an app detail screen, you can add rules and business logic. This is added via javascript.
+View App Business Logic#Select the app you want to edit in the application list. Click the Business Logic button. From here you can: Create new rules Edit existing rules Creating New Business Logic Rules#Open the business logic for an app (See View App Business Logic) and click the Business Logic button." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bheraldpk.github.io/hugo2/docs/business-logic/" /><meta property="article:section" content="docs" />
 
-<title> | Commure Docs</title>
+
+
+<title>Creating Rules and Logic | Commure Docs</title>
 <link rel="manifest" href="/hugo2/manifest.json">
 <link rel="icon" href="/hugo2/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/hugo2/book.min.eed8b6b088a9c7fb97e52d6a6d3d763d5a139e94ea7c7e07b6b3325740e2b802.css" integrity="sha256-7ti2sIipx/uX5S1qbT12PVoTnpTqfH4HtrMyV0DiuAI=" crossorigin="anonymous">
   <script defer src="/hugo2/flexsearch.min.js"></script>
   <script defer src="/hugo2/en.search.min.ba5086339cf4b859b5eddbe5aad37cf6d227c34f2cf2ef9623f426a46368f553.js" integrity="sha256-ulCGM5z0uFm17dvlqtN89tInw08s8u&#43;WI/QmpGNo9VM=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://bheraldpk.github.io/hugo2/index.xml" title="Commure Docs" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -110,7 +110,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hugo2/docs/business-logic/" class="">Creating Rules and Logic</a>
+    <a href="/hugo2/docs/business-logic/" class="active">Creating Rules and Logic</a>
   
 
         </li>
@@ -165,7 +165,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/hugo2/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong></strong>
+  <strong>Creating Rules and Logic</strong>
 
   <label for="toc-control">
     
@@ -179,7 +179,13 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#view-app-business-logic">View App Business Logic</a></li>
+    <li><a href="#creating-new-business-logic-rules">Creating New Business Logic Rules</a></li>
+    <li><a href="#editing-existing-rule">Editing Existing Rule</a></li>
+  </ul>
+</nav>
 
 
 
@@ -190,21 +196,50 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="application-management-tool">
-  Application Management Tool
-  <a class="anchor" href="#application-management-tool">#</a>
+  <article class="markdown"><h1 id="creating-rules-and-business-logic">
+  Creating Rules and Business Logic
+  <a class="anchor" href="#creating-rules-and-business-logic">#</a>
 </h1>
-<p>The initial view shows a list of the applications that have been created on the Commure OS platform.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>Here you&rsquo;ll find the following topics:</p>
+<p>From within an app detail screen, you can add rules and business logic. This is added via javascript.</p>
+<h2 id="view-app-business-logic">
+  View App Business Logic
+  <a class="anchor" href="#view-app-business-logic">#</a>
+</h2>
+<ol>
+<li>Select the app you want to edit in the application list.</li>
+<li>Click the <strong>Business Logic</strong> button. From here you can:
 <ul>
-<li><a href="./docs/app-list">Applications List</a></li>
-<li><a href="./docs/app-ui-view">Overview of App UI Screen</a></li>
-<li><a href="./docs/create-app">Starting a New App</a></li>
-<li><a href="./docs/business-logic">App Rules and Logic</a></li>
-<li><a href="./docs/schema">App Data Schema</a></li>
+<li><a href="#creating-new-business-logic-rules">Create new rules</a></li>
+<li><a href="#editing-existing-rule">Edit existing rules</a></li>
 </ul>
+</li>
+</ol>
+<h2 id="creating-new-business-logic-rules">
+  Creating New Business Logic Rules
+  <a class="anchor" href="#creating-new-business-logic-rules">#</a>
+</h2>
+<ol>
+<li>Open the business logic for an app (See <a href="#view-app-business-logic">View App Business Logic</a>) and click the <strong>Business Logic</strong> button.</li>
+<li>Click the <strong>+ CREATE</strong> button in the top-right corner of the screen.</li>
+<li>Complete the following details in the drawer that opens to the right and then click <strong>SAVE</strong>.
+<ul>
+<li>Hook Name</li>
+<li>Hook Type</li>
+<li>Operation Name</li>
+<li>Code</li>
+</ul>
+</li>
+</ol>
+<h2 id="editing-existing-rule">
+  Editing Existing Rule
+  <a class="anchor" href="#editing-existing-rule">#</a>
+</h2>
+<ol>
+<li>Open the business logic for an app (See <a href="#view-app-business-logic">View App Business Logic</a>) and click the <strong>Business Logic</strong> button.</li>
+<li>Select the rule you want to edit.</li>
+<li>In the drawer that opens to the right, edit the hook details and then click <strong>SAVE</strong>.</li>
+</ol>
+<p>Return <a href="/hugo2/">Home</a></p>
 </article>
  
       
@@ -244,7 +279,13 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#view-app-business-logic">View App Business Logic</a></li>
+    <li><a href="#creating-new-business-logic-rules">Creating New Business Logic Rules</a></li>
+    <li><a href="#editing-existing-rule">Editing Existing Rule</a></li>
+  </ul>
+</nav>
 
 
  

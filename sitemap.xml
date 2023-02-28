@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bheraldpk.github.io/hugo2/docs/app-list/</loc>
+  </url><url>
     <loc>https://bheraldpk.github.io/hugo2/docs/app-ui-view/</loc>
   </url><url>
     <loc>https://bheraldpk.github.io/hugo2/docs/create-app/</loc>
@@ -10,6 +12,8 @@
     <priority>0</priority>
   </url><url>
     <loc>https://bheraldpk.github.io/hugo2/categories/</loc>
+  </url><url>
+    <loc>https://bheraldpk.github.io/hugo2/docs/business-logic/</loc>
   </url><url>
     <loc>https://bheraldpk.github.io/hugo2/docs/schema/</loc>
   </url><url>

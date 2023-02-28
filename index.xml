@@ -7,13 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://bheraldpk.github.io/hugo2/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Applications List Screen</title>
+      <link>https://bheraldpk.github.io/hugo2/docs/app-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheraldpk.github.io/hugo2/docs/app-list/</guid>
+      <description>Overview of Applications List Screen#The Applications list screen is where you can see the list of all of the apps that have been created on your tenant.
+Viewing the Applications List#Select Applications from the sidebar. The list of apps displays. From here you can edit an existing app or start a new app. Viewing Application Details#Select Applications from the sidebar.
+Click to select the app you want to view in the list.</description>
+    </item>
+    
+    <item>
       <title>Overview of App UI Screen</title>
       <link>https://bheraldpk.github.io/hugo2/docs/app-ui-view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bheraldpk.github.io/hugo2/docs/app-ui-view/</guid>
       <description>Overview of App UI Screen#The App UI screen is where you can create, edit, and delete UI pages.
-Viewing the Page List for an App#Select Applications from the sidebar. Select the app you want to edit. Click the APP UI button near the top of the screen. This opens the Page List showing each Page Name, Path, and Page icon for each page that has been created for the app.</description>
+What is a page?
+A page is a unique display used for different purposes, such as changing the view depending on the device (web, mobile, tablet) or creating different views for different audiences, such as managers and staff.
+A page is made up components and is managed by rules.</description>
     </item>
     
     <item>
@@ -26,12 +39,22 @@ Viewing the Page List for an App#Select Applications from the sidebar. Select 
     </item>
     
     <item>
+      <title>Creating Rules and Logic</title>
+      <link>https://bheraldpk.github.io/hugo2/docs/business-logic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheraldpk.github.io/hugo2/docs/business-logic/</guid>
+      <description>Creating Rules and Business Logic#From within an app detail screen, you can add rules and business logic. This is added via javascript.
+View App Business Logic#Select the app you want to edit in the application list. Click the Business Logic button. From here you can: Create new rules Edit existing rules Creating New Business Logic Rules#Open the business logic for an app (See View App Business Logic) and click the Business Logic button.</description>
+    </item>
+    
+    <item>
       <title>Database Schema</title>
       <link>https://bheraldpk.github.io/hugo2/docs/schema/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bheraldpk.github.io/hugo2/docs/schema/</guid>
-      <description>App Data Schema#Enabled by Commure OS
+      <description>App Data Schema#These are the database tables or entities of this application.
 Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
 Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
 View app database schema#Select the app you want to edit in the application list.</description>
