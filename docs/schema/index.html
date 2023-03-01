@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="App Data Schema#These are the database tables or entities of this application.
-Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
-Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
-View app database schema#Select the app you want to edit in the application list.">
+Managing App Metadata Schema#Each application is created with a set of database tables, including a Patient table and some default nondescript tables.
+View app database schema#Select the app you want to edit in the application list. Click the Data Schema button. From here you can: Create a new table Create new table fields or edit existing fields Edit existing fields Preview app Edit table information#Open the database schema for the app (see View an app&rsquo;s database schema).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Database Schema" />
 <meta property="og:description" content="App Data Schema#These are the database tables or entities of this application.
-Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
-Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
-View app database schema#Select the app you want to edit in the application list." />
+Managing App Metadata Schema#Each application is created with a set of database tables, including a Patient table and some default nondescript tables.
+View app database schema#Select the app you want to edit in the application list. Click the Data Schema button. From here you can: Create a new table Create new table fields or edit existing fields Edit existing fields Preview app Edit table information#Open the database schema for the app (see View an app&rsquo;s database schema)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bheraldpk.github.io/hugo2/docs/schema/" /><meta property="article:section" content="docs" />
 
@@ -23,7 +21,7 @@ View app database schema#Select the app you want to edit in the application li
 <link rel="icon" href="/hugo2/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/hugo2/book.min.eed8b6b088a9c7fb97e52d6a6d3d763d5a139e94ea7c7e07b6b3325740e2b802.css" integrity="sha256-7ti2sIipx/uX5S1qbT12PVoTnpTqfH4HtrMyV0DiuAI=" crossorigin="anonymous">
   <script defer src="/hugo2/flexsearch.min.js"></script>
-  <script defer src="/hugo2/en.search.min.ba5086339cf4b859b5eddbe5aad37cf6d227c34f2cf2ef9623f426a46368f553.js" integrity="sha256-ulCGM5z0uFm17dvlqtN89tInw08s8u&#43;WI/QmpGNo9VM=" crossorigin="anonymous"></script>
+  <script defer src="/hugo2/en.search.min.0073fc9734eaa6fbf9b2f4985b42308065aac797bc091929f8cb51c3ca53abcd.js" integrity="sha256-AHP8lzTqpvv5svSYW0IwgGWqx5e8CRkp&#43;MtRw8pTq80=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -188,10 +186,10 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#managing-app-metadata-schema">Managing App Metadata Schema</a>
       <ul>
         <li><a href="#view-app-database-schema">View app database schema</a></li>
-        <li><a href="#preview-app">Preview app</a></li>
+        <li><a href="#edit-table-information">Edit table information</a></li>
         <li><a href="#create-a-new-table">Create a new table</a></li>
         <li><a href="#create-or-edit-table-fields">Create or edit table fields</a></li>
-        <li><a href="#edit-table-information">Edit table information</a></li>
+        <li><a href="#preview-app">Preview app</a></li>
       </ul>
     </li>
     <li><a href="#defining-table-level-rules">Defining Table-Level Rules</a></li>
@@ -216,16 +214,14 @@ https://github.com/alex-shpak/hugo-book
 <p>These are the database tables or entities of this application.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="managing-app-metadata-schema">
   Managing App Metadata Schema
   <a class="anchor" href="#managing-app-metadata-schema">#</a>
 </h2>
 <!-- raw HTML omitted -->
-<p>What is the purpose of the metadata schema?
-What comes out of the box?
-What else can you do?</p>
-<p>Each application is created with a default set of database tables, including Patient, Table2,
-created with a Patient table with some default nondescript tables</p>
+<p>Each application is created with a set of database tables, including a Patient table and some default nondescript tables.</p>
 <h3 id="view-app-database-schema">
   View app database schema
   <a class="anchor" href="#view-app-database-schema">#</a>
@@ -241,13 +237,15 @@ created with a Patient table with some default nondescript tables</p>
 </ul>
 </li>
 </ol>
-<h3 id="preview-app">
-  Preview app
-  <a class="anchor" href="#preview-app">#</a>
+<h3 id="edit-table-information">
+  Edit table information
+  <a class="anchor" href="#edit-table-information">#</a>
 </h3>
 <ol>
 <li>Open the database schema for the app (see <a href="#view-app-database-schema">View an app&rsquo;s database schema</a>).</li>
-<li>Click the <strong>PREVIEW</strong> button to open a preview of the app.</li>
+<li>Select the table in the list that you want to edit.</li>
+<li>Click the <strong>EDIT</strong> button in the top-right corner of the screen to launch the drawer to edit the table information.</li>
+<li>Edit the table <strong>Name</strong>, <strong>Is Canonical</strong>, or <strong>Description</strong>, and then click <strong>SAVE</strong>.</li>
 </ol>
 <h3 id="create-a-new-table">
   Create a new table
@@ -258,15 +256,9 @@ created with a Patient table with some default nondescript tables</p>
 <li>Click the <strong>Create</strong> button in the top-right corner of the screen.</li>
 <li>Complete the following details in the drawer that opens on the right side of the screen and then click <strong>Save</strong>.
 <ul>
-<li>
-<p>Select Table or Canonical - Canonical tables allows leveraging supported FHIR resources.</p>
-</li>
-<li>
-<p>Enter a Name for this table. For canonical tables, this will be a drop-down with the list of canonical tables available. For non-canonical tables, this will be a text input.</p>
-</li>
-<li>
-<p>Enter a Description for this table</p>
-</li>
+<li>Select <strong>Table</strong> or <strong>Canonical</strong> - Canonical tables allows leveraging supported FHIR resources.</li>
+<li>Enter a <strong>Name</strong> for this table. For canonical tables, this will be a drop-down with the list of canonical tables available. For non-canonical tables, this will be a text input.</li>
+<li>Enter a <strong>Description</strong> for this table.</li>
 </ul>
 </li>
 </ol>
@@ -283,26 +275,24 @@ created with a Patient table with some default nondescript tables</p>
 <ul>
 <li>Select the field Type
 <ul>
-<li>Field - options include: base64Binary, boolean, date, datetime, float, integer, json, money, numeric, serial, string, text, time, uuid.</li>
-<li>Reference - A reference field stores a reference to a field on another table. For non-canonical tables the field type must be uuid. For canonical tables (FHIR) it must be string.</li>
-<li>Computed - To add the calculation logic, the user can write a javascript.</li>
-<li>Choice -</li>
+<li><strong>Field</strong> - options include: base64Binary, boolean, date, datetime, float, integer, json, money, numeric, serial, string, text, time, uuid.</li>
+<li><strong>Reference</strong> - A reference field stores a reference to a field on another table. For non-canonical tables the field type must be uuid. For canonical tables (FHIR) it must be string.</li>
+<li><strong>Computed</strong> - To add the calculation logic, the user can write a javascript.</li>
+<li><strong>Choice</strong> -</li>
 </ul>
 </li>
-<li>Enter the field Name</li>
-<li>Select the Field Type</li>
+<li>Enter the field <strong>Name</strong>.</li>
+<li>Select the <strong>Field Type</strong>.</li>
 </ul>
 </li>
 </ol>
-<h3 id="edit-table-information">
-  Edit table information
-  <a class="anchor" href="#edit-table-information">#</a>
+<h3 id="preview-app">
+  Preview app
+  <a class="anchor" href="#preview-app">#</a>
 </h3>
 <ol>
 <li>Open the database schema for the app (see <a href="#view-app-database-schema">View an app&rsquo;s database schema</a>).</li>
-<li>Select the table in the list that you want to edit.</li>
-<li>Click the <strong>EDIT</strong> button in the top-right corner of the screen to launch the drawer to edit the table information.</li>
-<li>Edit the table Name, Is Canonical, or Description, and then click <strong>SAVE</strong>.</li>
+<li>Click the <strong>PREVIEW</strong> button to open a preview of the app.</li>
 </ol>
 <h2 id="defining-table-level-rules">
   Defining Table-Level Rules
@@ -361,10 +351,10 @@ created with a Patient table with some default nondescript tables</p>
     <li><a href="#managing-app-metadata-schema">Managing App Metadata Schema</a>
       <ul>
         <li><a href="#view-app-database-schema">View app database schema</a></li>
-        <li><a href="#preview-app">Preview app</a></li>
+        <li><a href="#edit-table-information">Edit table information</a></li>
         <li><a href="#create-a-new-table">Create a new table</a></li>
         <li><a href="#create-or-edit-table-fields">Create or edit table fields</a></li>
-        <li><a href="#edit-table-information">Edit table information</a></li>
+        <li><a href="#preview-app">Preview app</a></li>
       </ul>
     </li>
     <li><a href="#defining-table-level-rules">Defining Table-Level Rules</a></li>

@@ -55,9 +55,8 @@ View App Business Logic#Select the app you want to edit in the application lis
       
       <guid>https://bheraldpk.github.io/hugo2/docs/schema/</guid>
       <description>App Data Schema#These are the database tables or entities of this application.
-Managing App Metadata Schema#What is the purpose of the metadata schema? What comes out of the box? What else can you do?
-Each application is created with a default set of database tables, including Patient, Table2, created with a Patient table with some default nondescript tables
-View app database schema#Select the app you want to edit in the application list.</description>
+Managing App Metadata Schema#Each application is created with a set of database tables, including a Patient table and some default nondescript tables.
+View app database schema#Select the app you want to edit in the application list. Click the Data Schema button. From here you can: Create a new table Create new table fields or edit existing fields Edit existing fields Preview app Edit table information#Open the database schema for the app (see View an app&amp;rsquo;s database schema).</description>
     </item>
     
   </channel>
